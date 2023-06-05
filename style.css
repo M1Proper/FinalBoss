@@ -1,0 +1,86 @@
+$MainColor: rgb(34, 34, 34);
+
+%bgi {
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+background-size: cover;
+}
+
+%block-bgi {
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+}
+
+%centerText {
+text-align: center;
+max-width: 1000px;
+margin: auto;
+}
+
+
+body {
+background-color: white;
+color: black;
+font-family: 'Times New Roman', Times, serif;
+}
+
+h3 {
+font-size: 2.5rem;
+}
+
+h6 {
+letter-spacing: 4px;
+font-size: 2rem;
+font-weight: 300;   
+}
+
+a {
+letter-spacing: 2px;
+text-transform: uppercase;
+font-weight: 300;
+font-size: 15px;    
+@extend %roboto
+}
+
+.first {
+display: grid;
+justify-content: center;
+
+background-color: $MainColor;
+color: white;
+text-align: center;
+padding: 153px;
+padding-bottom: 35px;
+
+background-color: purple;
+@extend %bgi;
+}
+
+.block {
+width: 500px;
+padding-top: 70px;
+padding-bottom: 70px;
+background-color: $MainColor;
+}
+
+.text {
+@extend %centerText;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+.meny{
+text-align: center;
+margin-top: 100px;
+margin-bottom: 100px;
+}
+#head{
+width: calc(100%);
+height: 60px;
+position: fixed;
+background: rgb(174, 37, 174);
+z-index: 1000;
+font-size: 30px;
+}
